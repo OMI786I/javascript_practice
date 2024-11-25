@@ -42,3 +42,26 @@ function filterEven2(arr) {
   const result = arr.filter((res) => res % 2 === 0);
   return result;
 }
+
+//3)
+//sum all elements
+
+// Input: [1, 2, 3, 4]
+// Output: 10
+
+//without functions
+
+function sum(arr) {
+  result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    result = result + arr[i];
+  }
+  return result;
+}
+
+function sum2(arr) {
+  let result = arr.reduce((sum, current) => sum + current, 0);
+  return result;
+}
+
+// console.log(sum2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
