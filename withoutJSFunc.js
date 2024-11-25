@@ -115,4 +115,30 @@ function maximum(arr) {
 function maximum2(arr) {
   return Math.max(...arr);
 }
-console.log(maximum2([10, 7, 90, 29]));
+
+//6) Removing all the zeros
+
+// Input: [1, 0, 2, 0, 3, 4, 0]
+// Output: [1, 2, 3, 4]
+//without functions
+function removeZeros(arr) {
+  let result = [];
+  let j = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] != 0) {
+      //result.push(arr[i]);
+      result[j] = arr[i];
+      j++;
+    }
+  }
+  return result;
+}
+
+//with functions
+
+function removeZeros2(arr) {
+  let result = arr.filter((res) => res != 0);
+  return result;
+}
+
+console.log(removeZeros2([0, 0, 0, 0, 0, 5, 0, 0]));
