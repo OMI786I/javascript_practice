@@ -93,4 +93,26 @@ function reverse2(arr) {
   let result = arr.reverse();
   return result;
 }
-console.log(reverse2([5, 6, 7, 8]));
+
+//5)
+//Find Maximum Value
+// Input: [1, 7, 3, 4]
+// Output: 7
+
+//without functions
+
+function maximum(arr) {
+  let max = arr[0];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+function maximum2(arr) {
+  return Math.max(...arr);
+}
+console.log(maximum2([10, 7, 90, 29]));
