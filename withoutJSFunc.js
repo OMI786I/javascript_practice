@@ -65,3 +65,32 @@ function sum2(arr) {
 }
 
 // console.log(sum2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+//4)
+//Reversing an array
+// Input: [1, 2, 3, 4]
+// Output: [4, 3, 2, 1]
+
+//without functions
+
+function reverse(arr) {
+  let result = [];
+  let j = 0;
+  for (let i = arr.length - 1; i >= 0; i--) {
+    //  result.push(arr[i]);
+    result[j] = arr[i];
+    j++;
+  }
+  return result;
+}
+
+//with functions
+
+// Input: [1, 2, 3, 4]
+// Output: [4, 3, 2, 1]
+
+function reverse2(arr) {
+  let result = arr.reverse();
+  return result;
+}
+console.log(reverse2([5, 6, 7, 8]));
